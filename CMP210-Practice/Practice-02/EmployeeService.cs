@@ -24,8 +24,12 @@ namespace Practice_02
             } else if (employeeType == EmployeeType.SeniorManager)
             {
                 factor = 2;
+            }else if(employeeType == employeeType.Expert)
+            {
+                factor = 3;
             }
             // TODO: if employee is Expert, set factor = 3
+            
 
             var salary = BASIC_SALARY * years * factor;
 
